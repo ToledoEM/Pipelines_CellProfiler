@@ -5,7 +5,7 @@
 This pipeline is for analysis of LSM files of nuclear staining.
 
 
-1. **CellProfiler from http://cellprofiler.org/  available for OSX Windows and Linux **
+1. **CellProfiler from http://cellprofiler.org/  available for OSX Windows and Linux**
 
 Carpenter, Anne E., Thouis R. Jones, Michael R. Lamprecht, Colin Clarke, In Han Kang, Ola Friman, David A. Guertin et al. "CellProfiler: image analysis software for identifying and quantifying cell phenotypes." Genome biology 7, no. 10 (2006): R100.
 
