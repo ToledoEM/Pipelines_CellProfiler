@@ -1,0 +1,443 @@
+Key,Value
+CellProfiler_Version,2016-05-03T18:31:00 ac0529e
+ChannelType_DAPI,Grayscale
+ChannelType_Green,Grayscale
+ChannelType_Red,Grayscale
+Default_InputFolder,/home/enrique
+Default_OutputFolder,/home/enrique/Documents/cellprofiler
+ImageSet_Zip_Dictionary,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PE9NRSB4bWxucz0iaHR0cDovL3d3dy5vcGVubWljcm9zY29weS5vcmcvU2NoZW1hcy9PTUUvMjAxNS0wMSI+PEltYWdlIElEPSJEQVBJIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpEQVBJIiBTaXplVD0iMSIgU2l6ZVg9IjEwMjQiIFNpemVZPSIxMDI0Ij48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovaG9tZS9lbnJpcXVlL0RvY3VtZW50cy9jZWxscHJvZmlsZXIvS2FuZXlhc3UvMTYwOTIxX0hTNDAxX0RpZmYyNF9EMTZfT19MTVgxQV9GT1hBMl8yMC0xLmxzbSIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iR3JlZW4iPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkdyZWVuIiBTaXplVD0iMSIgU2l6ZVg9IjEwMjQiIFNpemVZPSIxMDI0Ij48VGlmZkRhdGEgRmlyc3RDPSIyIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIyIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovaG9tZS9lbnJpcXVlL0RvY3VtZW50cy9jZWxscHJvZmlsZXIvS2FuZXlhc3UvMTYwOTIxX0hTNDAxX0RpZmYyNF9EMTZfT19MTVgxQV9GT1hBMl8yMC0ubHNtIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJSZWQiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOlJlZCIgU2l6ZVQ9IjEiIFNpemVYPSIxMDI0IiBTaXplWT0iMTAyNCI+PFRpZmZEYXRhIEZpcnN0Qz0iMyIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMyIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L2hvbWUvZW5yaXF1ZS9Eb2N1bWVudHMvY2VsbHByb2ZpbGVyL0thbmV5YXN1LzE2MDkyMV9IUzQwMV9EaWZmMjRfRDE2X09fTE1YMUFfRk9YQTJfMjAtTzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04IiBzdGFuZGFsb25lPSJubyI/PjxPTUUgeG1sbnM9Imh0dHA6Ly93d3cub3Blbm1pY3Jvc2NvcHkub3JnL1NjaGVtYXMvT01FLzIwMTUtMDEiPjxJbWFnZSBJRD0iREFQSSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6REFQSSIgU2l6ZVQ9IjEiIFNpemVYPSIxMDI0IiBTaXplWT0iMTAyNCI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L2hvbWUvZW5yaXF1ZS9Eb2N1bWVudHMvY2VsbHByb2ZpbGVyL0thbmV5YXN1LzE2MDkyMV9IUzQwMV9EaWZmMjRfRDE2X09fTE1YMUFfRk9YQTJfMjAtMi5sc20iLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkdyZWVuIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpHcmVlbiIgU2l6ZVQ9IjEiIFNpemVYPSIxMDI0IiBTaXplWT0iMTAyNCI+PFRpZmZEYXRhIEZpcnN0Qz0iMiIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMiIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L2hvbWUvZW5yaXF1ZS9Eb2N1bWVudHMvY2VsbHByb2ZpbGVyL0thbmV5YXN1LzE2MDlTMV9EaWZmMl9EMV9MTVgxQV9BMjAubHNtIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJSZWQiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOlJlZCIgU2l6ZVQ9IjEiIFNpemVYPSIxMDI0IiBTaXplWT0iMTAyNCI+PFRpZmZEYXRhIEZpcnN0Qz0iMyIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMyIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L2hvbWUvZW5yaXF1ZS9Eb2N1bWVudHMvY2VsbHByb2ZpbGVyL0thbmV5YXN1LzE8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCIgc3RhbmRhbG9uZT0ibm8iPz48T01FIHhtbG5zPSJodHRwOi8vd3d3Lm9wZW5taWNyb3Njb3B5Lm9yZy9TY2hlbWFzL09NRS8yMDE1LTAxIj48SW1hZ2UgSUQ9IkRBUEkiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkRBUEkiIFNpemVUPSIxIiBTaXplWD0iMTAyNCIgU2l6ZVk9IjEwMjQiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi9ob21lL2VucmlxdWUvRG9jdW1lbnRzL2NlbGxwcm9maWxlci9LYW5leWFzdS8xNzAyMDlfSDlfRGlmZjI3LTNfRDE3X0xNWDFBX0ZPWEEyXzEwLTEubHNtIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJHcmVlbiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6R3JlZW4iIFNpemVUPSIxIiBTaXplWD0iMTAyNCIgU2l6ZVk9IjEwMjQiPjxUaWZmRGF0YSBGaXJzdEM9IjIiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjIiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi9ob21lL2VucmlxdWUvRG9jdW1lbnRzL2NlbGxwcm9maWxlci9LYW5leWFzdS8xNzAyMDlfSDlfRGlmZjI3LTNfRDE3X0xNWDFBX0ZPWEEyXzEwLTEubHNtIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJSZWQiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOlJlZCIgU2l6ZVQ9IjEiIFNpemVYPSIxMDI0IiBTaXplWT0iMTAyNCI+PFRpZmZEYXRhIEZpcnN0Qz0iMyIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMyIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L2hvbWUvZW5yaXF1ZS9Eb2N1bWVudHMvY2VsbHByb2ZpbGVyL0thbmV5YXN1LzE3MDIwOV9IOV9EaWZmMjctM19EMTdfTE1YMUFfeG1scnNpb24xLjAiY29GImFubz9PTUVuc3A6L3d3Lm9waXlnaGFzL09NRS0wMSI+PEltYWdlIElEPSJQSSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6REFQSSIgU2l6ZVQ9IjEiIFNpemVYPSIxMDI0IiBTaXplWT0iMTAyNCI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovaG9tZS9lbnJpcXVlL0RvY3VtZW50cy9jZWxscHJvZmlsZXIvS2FuZXlhc3UvMTcwMjA5X0g5X0RpZmYyNy0zX0QxN19MTVgxQV9PVFgyXzEwLTEubHNtIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJlbkdyZWVuIj0iMiIgMm50PSIxVUlEIEZpZT0iZmlsZTptZWUvY2Vscm9lcnUxNzAyX0g5X0RpZmY3X0RYX08yXzEwLW0+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiWj0iMCIvPjwveD48L21hSW1hZ2UgSWQ+PFBpeGVscyBtZW5UIiBJUmVkIiBTaXplPSIxIj0iMTAyNCJZMjRUaWZmRGF0YSBGaXJzdEM9IjMiIEZpcnN0VD0iMCIgWj0iMCIz
+Metadata_Tags,"[""ImageNumber""]"
+Pipeline_Pipeline,"CellProfiler Pipeline: http://www.cellprofiler.org
+Version:3
+DateRevision:20160503183100
+GitHash:ac0529e
+ModuleCount:20
+HasImagePlaneDetails:False
+
+Images:[module_num:1|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    :
+    Filter images?:No filtering
+    Select the rule criteria:and (extension does isimage) (directory doesnot containregexp ""\x5B\\\\\\\\\\\\\\\\/\x5D\\\\\\\\."")
+
+Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:4|show_window:True|notes:\x5B\'The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:Yes
+    Metadata data type:Text
+    Metadata types:{""SizeT""\x3A ""text"", ""Plate""\x3A ""text"", ""C""\x3A ""integer"", ""ChannelName""\x3A ""text"", ""Z""\x3A ""text"", ""Well""\x3A ""text"", ""Series""\x3A ""text"", ""Frame""\x3A ""text"", ""SizeX""\x3A ""text"", ""Site""\x3A ""text"", ""SizeZ""\x3A ""text"", ""SizeY""\x3A ""text"", ""FileLocation""\x3A ""text"", ""T""\x3A ""text"", ""SizeC""\x3A ""text"", ""ColorFormat""\x3A ""text""}
+    Extraction method count:1
+    Metadata extraction method:Extract from image file headers
+    Metadata source:File name
+    Regular expression:\x5B-+\x5D?(\x5B0-9\x5D*\\\\.\x5B0-9\x5D+\x7C\x5B0-9\x5D+)
+    Regular expression:(?P<Date>\x5B0-9\x5D{4}_\x5B0-9\x5D{2}_\x5B0-9\x5D{2})$
+    Extract metadata from:All images
+    Select the filtering criteria:and (file does contain """")
+    Metadata file location:
+    Match file and image metadata:\x5B\x5D
+    Use case insensitive matching?:No
+
+NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:6|show_window:True|notes:\x5B\'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:Images matching rules
+    Select the image type:Grayscale image
+    Name to assign these images:CONTROL
+    Match metadata:\x5B\x5D
+    Image set matching method:Order
+    Set intensity range from:Image metadata
+    Assignments count:3
+    Single images count:0
+    Maximum intensity:255.0
+    Select the rule criteria:or (metadata does ChannelName ""Ch1-T1"")
+    Name to assign these images:DAPI
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does ChannelName ""Ch1-T2"")
+    Name to assign these images:Green
+    Name to assign these objects:Nucleus
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does ChannelName ""Ch1-T3"")
+    Name to assign these images:Red
+    Name to assign these objects:Cytoplasm
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
+    Maximum intensity:255.0
+
+Groups:[module_num:4|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:No
+    grouping metadata count:1
+    Metadata category:FileLocation
+
+RescaleIntensity:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:DAPI
+    Name the output image:RescaledBlue
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Method to rescale pixels below the lower limit:Mask pixels
+    Custom value for pixels below lower limit:0.0
+    Method to rescale pixels above the upper limit:Mask pixels
+    Custom value for pixels above upper limit:0.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+RescaleIntensity:[module_num:6|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:Green
+    Name the output image:RescaledGreen
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Method to rescale pixels below the lower limit:Mask pixels
+    Custom value for pixels below lower limit:0.0
+    Method to rescale pixels above the upper limit:Mask pixels
+    Custom value for pixels above upper limit:0.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+RescaleIntensity:[module_num:7|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:Red
+    Name the output image:RescaledRed
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Method to rescale pixels below the lower limit:Mask pixels
+    Custom value for pixels below lower limit:0.0
+    Method to rescale pixels above the upper limit:Mask pixels
+    Custom value for pixels above upper limit:0.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+IdentifyPrimaryObjects:[module_num:8|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\'ID Nuclei\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:RescaledBlue
+    Name the primary objects to be identified:Nuclei
+    Typical diameter of objects, in pixel units (Min,Max):15,200
+    Discard objects outside the diameter range?:Yes
+    Try to merge too small objects with nearby larger objects?:No
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Name the outline image:Nuclei_outline
+    Fill holes in identified objects?:Never
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Retain outlines of the identified objects?:Yes
+    Automatically calculate the threshold using the Otsu method?:Yes
+    Enter Laplacian of Gaussian threshold:0.5
+    Automatically calculate the size of objects for the Laplacian of Gaussian filter?:Yes
+    Enter LoG filter diameter:5.0
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Threshold setting version:2
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Select the smoothing method for thresholding:Automatic
+    Threshold smoothing scale:1.0
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Approximate fraction of image covered by objects?:0.01
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Select binary image:None
+    Masking objects:None
+    Two-class or three-class thresholding?:Two classes
+    Minimize the weighted variance or the entropy?:Weighted variance
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Method to calculate adaptive window size:Image size
+    Size of adaptive window:10
+    Use default parameters?:Default
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+
+IdentifyPrimaryObjects:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\'ID Green objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:RescaledGreen
+    Name the primary objects to be identified:GreenObjects
+    Typical diameter of objects, in pixel units (Min,Max):15,100
+    Discard objects outside the diameter range?:Yes
+    Try to merge too small objects with nearby larger objects?:No
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Name the outline image:Green_outline
+    Fill holes in identified objects?:Never
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Retain outlines of the identified objects?:Yes
+    Automatically calculate the threshold using the Otsu method?:Yes
+    Enter Laplacian of Gaussian threshold:0.5
+    Automatically calculate the size of objects for the Laplacian of Gaussian filter?:Yes
+    Enter LoG filter diameter:5.0
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Threshold setting version:2
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Select the smoothing method for thresholding:Automatic
+    Threshold smoothing scale:1.0
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Approximate fraction of image covered by objects?:0.01
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Select binary image:None
+    Masking objects:None
+    Two-class or three-class thresholding?:Two classes
+    Minimize the weighted variance or the entropy?:Weighted variance
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Method to calculate adaptive window size:Image size
+    Size of adaptive window:10
+    Use default parameters?:Default
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+
+IdentifyPrimaryObjects:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:10|show_window:True|notes:\x5B\'ID red objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:RescaledRed
+    Name the primary objects to be identified:RedObjects
+    Typical diameter of objects, in pixel units (Min,Max):15,100
+    Discard objects outside the diameter range?:Yes
+    Try to merge too small objects with nearby larger objects?:No
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Name the outline image:Red_outline
+    Fill holes in identified objects?:Never
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Retain outlines of the identified objects?:Yes
+    Automatically calculate the threshold using the Otsu method?:Yes
+    Enter Laplacian of Gaussian threshold:0.5
+    Automatically calculate the size of objects for the Laplacian of Gaussian filter?:Yes
+    Enter LoG filter diameter:5.0
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Threshold setting version:2
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Select the smoothing method for thresholding:Automatic
+    Threshold smoothing scale:1.0
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Approximate fraction of image covered by objects?:0.01
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Select binary image:None
+    Masking objects:None
+    Two-class or three-class thresholding?:Two classes
+    Minimize the weighted variance or the entropy?:Weighted variance
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Method to calculate adaptive window size:Image size
+    Size of adaptive window:10
+    Use default parameters?:Default
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+
+MeasureCorrelation:[module_num:11|svn_version:\'Unknown\'|variable_revision_number:3|show_window:True|notes:\x5B\'Measure correlation of green and red channel inside the DAPI positive area\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Hidden:2
+    Hidden:1
+    Select an image to measure:RescaledGreen
+    Select an image to measure:RescaledRed
+    Set threshold as percentage of maximum intensity for the images:5
+    Select where to measure correlation:Within objects
+    Select an object to measure:Nuclei
+
+RelateObjects:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'Relationship Red Objects and Green Objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input child objects:RedObjects
+    Select the input parent objects:GreenObjects
+    Calculate child-parent distances?:Centroid
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Parent name:None
+
+RelateObjects:[module_num:13|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'Green versus DAPI\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input child objects:GreenObjects
+    Select the input parent objects:Nuclei
+    Calculate child-parent distances?:Centroid
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Parent name:None
+
+RelateObjects:[module_num:14|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'Red versus DAPI\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input child objects:RedObjects
+    Select the input parent objects:Nuclei
+    Calculate child-parent distances?:Centroid
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Parent name:None
+
+ClassifyObjects:[module_num:15|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Make each classification decision on how many measurements?:Single measurement
+    Hidden:3
+    Select the object to be classified:GreenObjects
+    Select the measurement to classify by:Children_RedObjects_Count
+    Select bin spacing:Evenly spaced bins
+    Number of bins:3
+    Lower threshold:0.5
+    Use a bin for objects below the threshold?:No
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:No
+    Enter the custom thresholds separating the values between bins:0,1
+    Give each bin a name?:No
+    Enter the bin names separated by commas:None
+    Retain an image of the classified objects?:Yes
+    Name the output image:ClassifiedRedGreen
+    Select the object to be classified:Nuclei
+    Select the measurement to classify by:Children_GreenObjects_Count
+    Select bin spacing:Evenly spaced bins
+    Number of bins:3
+    Lower threshold:0.5
+    Use a bin for objects below the threshold?:No
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:No
+    Enter the custom thresholds separating the values between bins:0,1
+    Give each bin a name?:No
+    Enter the bin names separated by commas:None
+    Retain an image of the classified objects?:No
+    Name the output image:ClassifiedNuclei
+    Select the object to be classified:Nuclei
+    Select the measurement to classify by:Children_RedObjects_Count
+    Select bin spacing:Evenly spaced bins
+    Number of bins:3
+    Lower threshold:0.5
+    Use a bin for objects below the threshold?:No
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:No
+    Enter the custom thresholds separating the values between bins:0,1
+    Give each bin a name?:No
+    Enter the bin names separated by commas:None
+    Retain an image of the classified objects?:No
+    Name the output image:ClassifiedNuclei
+    Select the object name:None
+    Select the first measurement:None
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Select the second measurement:None
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Use custom names for the bins?:No
+    Enter the low-low bin name:low_low
+    Enter the low-high bin name:low_high
+    Enter the high-low bin name:high_low
+    Enter the high-high bin name:high_high
+    Retain an image of the classified objects?:No
+    Enter the image name:None
+
+MaskObjects:[module_num:16|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:GreenObjects
+    Name the masked objects:RedGreen
+    Mask using a region defined by other objects or by binary image?:Objects
+    Select the masking object:RedObjects
+    Select the masking image:None
+    Handling of objects that are partially masked:Keep overlapping region
+    Fraction of object that must overlap:0.5
+    Numbering of resulting objects:Renumber
+    Retain outlines of the resulting objects?:No
+    Name the outline image:MaskedOutlines
+    Invert the mask?:No
+
+MaskObjects:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\'Nuclei_red\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:Nuclei
+    Name the masked objects:RedDAPI
+    Mask using a region defined by other objects or by binary image?:Objects
+    Select the masking object:RedObjects
+    Select the masking image:None
+    Handling of objects that are partially masked:Keep overlapping region
+    Fraction of object that must overlap:0.5
+    Numbering of resulting objects:Renumber
+    Retain outlines of the resulting objects?:No
+    Name the outline image:MaskedOutlines
+    Invert the mask?:No
+
+MaskObjects:[module_num:18|svn_version:\'Unknown\'|variable_revision_number:2|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select objects to be masked:Nuclei
+    Name the masked objects:GreenDAPI
+    Mask using a region defined by other objects or by binary image?:Objects
+    Select the masking object:GreenObjects
+    Select the masking image:None
+    Handling of objects that are partially masked:Keep overlapping region
+    Fraction of object that must overlap:0.5
+    Numbering of resulting objects:Renumber
+    Retain outlines of the resulting objects?:No
+    Name the outline image:MaskedOutlines
+    Invert the mask?:No
+
+MeasureImageAreaOccupied:[module_num:19|svn_version:\'Unknown\'|variable_revision_number:3|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Hidden:3
+    Measure the area occupied in a binary image, or in objects?:Objects
+    Select objects to measure:RedGreen
+    Retain a binary image of the object regions?:No
+    Name the output binary image:Red_green
+    Select a binary image to measure:None
+    Measure the area occupied in a binary image, or in objects?:Objects
+    Select objects to measure:GreenDAPI
+    Retain a binary image of the object regions?:No
+    Name the output binary image:Stain
+    Select a binary image to measure:None
+    Measure the area occupied in a binary image, or in objects?:Objects
+    Select objects to measure:RedDAPI
+    Retain a binary image of the object regions?:No
+    Name the output binary image:Stain
+    Select a binary image to measure:None
+
+ExportToSpreadsheet:[module_num:20|svn_version:\'Unknown\'|variable_revision_number:11|show_window:True|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the column delimiter:Comma ("","")
+    Add image metadata columns to your object data file?:No
+    Limit output to a size that is allowed in Excel?:No
+    Select the measurements to export:Yes
+    Calculate the per-image mean values for object measurements?:No
+    Calculate the per-image median values for object measurements?:No
+    Calculate the per-image standard deviation values for object measurements?:No
+    Output file location:Default Input Folder sub-folder\x7CDocuments/cellprofiler/Coloc_results
+    Create a GenePattern GCT file?:No
+    Select source of sample row name:Metadata
+    Select the image to use as the identifier:None
+    Select the metadata to use as the identifier:None
+    Export all measurement types?:Yes
+    :Image\x7CCount_RedGreen,Image\x7CCount_RedDAPI,Image\x7CCount_GreenObjects,Image\x7CCount_GreenDAPI,Image\x7CCount_Nuclei,Image\x7CCount_RedObjects,Image\x7CAreaOccupied_Perimeter_RedGreen,Image\x7CAreaOccupied_Perimeter_GreenDAPI,Image\x7CAreaOccupied_Perimeter_RedDAPI,Image\x7CAreaOccupied_AreaOccupied_RedGreen,Image\x7CAreaOccupied_AreaOccupied_GreenDAPI,Image\x7CAreaOccupied_AreaOccupied_RedDAPI,Image\x7CAreaOccupied_TotalArea_RedGreen,Image\x7CAreaOccupied_TotalArea_GreenDAPI,Image\x7CAreaOccupied_TotalArea_RedDAPI,Image\x7CFileName_DAPI,Image\x7CClassify_Children_GreenObjects_Count_Bin_1_NumObjectsPerBin,Image\x7CClassify_Children_GreenObjects_Count_Bin_1_PctObjectsPerBin,Image\x7CClassify_Children_GreenObjects_Count_Bin_3_NumObjectsPerBin,Image\x7CClassify_Children_GreenObjects_Count_Bin_3_PctObjectsPerBin,Image\x7CClassify_Children_GreenObjects_Count_Bin_2_NumObjectsPerBin,Image\x7CClassify_Children_GreenObjects_Count_Bin_2_PctObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count_Bin_1_NumObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count_Bin_1_PctObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count_Bin_3_NumObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count_Bin_3_PctObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count_Bin_2_NumObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count_Bin_2_PctObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count1_Bin_1_NumObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count1_Bin_1_PctObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count1_Bin_3_NumObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count1_Bin_3_PctObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count1_Bin_2_NumObjectsPerBin,Image\x7CClassify_Children_RedObjects_Count1_Bin_2_PctObjectsPerBin,Image\x7CMetadata_FileLocation
+    Representation of Nan/Inf:NaN
+    Add a prefix to file names?:Yes
+    Filename prefix:Nuclear_quantification_
+    Overwrite existing files without warning?:No
+    Data to export:Image
+    Combine these object measurements with those of the previous object?:No
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+"
+Run_Timestamp,2017-06-01T13:43:29.885872
