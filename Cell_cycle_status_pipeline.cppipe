@@ -1,0 +1,290 @@
+CellProfiler Pipeline: http://www.cellprofiler.org
+Version:3
+DateRevision:20160503183100
+GitHash:ac0529e
+ModuleCount:12
+HasImagePlaneDetails:False
+
+Images:[module_num:1|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    :
+    Filter images?:Images only
+    Select the rule criteria:and (extension does isimage) (directory doesnot containregexp "\x5B\\\\\\\\\\\\\\\\/\x5D\\\\\\\\.")
+
+Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\'The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:Yes
+    Metadata data type:Text
+    Metadata types:{}
+    Extraction method count:1
+    Metadata extraction method:Extract from file/folder names
+    Metadata source:File name
+    Regular expression:^r(?P<WellRow>\\\\d{2})c(?P<WellColumn>\\\\d{2})f(?P<Site>\\\\d{2})p(?P<Plane>\\\\d{2})-ch(?P<ChannelNumber>\\\\d)
+    Regular expression:^r(?P<WellRow>\\\\d{2})c(?P<WellColumn>\\\\d{2})f(?P<Site>\\\\d{2})p(?P<Plane>\\\\d{2})-ch(?P<ChannelNumber>\\\\d)
+    Extract metadata from:All images
+    Select the filtering criteria:and (file does contain "")
+    Metadata file location:
+    Match file and image metadata:\x5B\x5D
+    Use case insensitive matching?:No
+
+NamesAndTypes:[module_num:3|svn_version:\'Unknown\'|variable_revision_number:6|show_window:False|notes:\x5B\'The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:Images matching rules
+    Select the image type:Grayscale image
+    Name to assign these images:DNA
+    Match metadata:\x5B\x5D
+    Image set matching method:Order
+    Set intensity range from:Image metadata
+    Assignments count:3
+    Single images count:0
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does ChannelNumber "1")
+    Name to assign these images:EdU
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does ChannelNumber "2")
+    Name to assign these images:pH3
+    Name to assign these objects:Nucleus
+    Select the image type:Grayscale image
+    Set intensity range from:Image bit-depth
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
+    Maximum intensity:255.0
+    Select the rule criteria:and (metadata does ChannelNumber "3")
+    Name to assign these images:DAPI
+    Name to assign these objects:Cytoplasm
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Retain outlines of loaded objects?:No
+    Name the outline image:LoadedOutlines
+    Maximum intensity:255.0
+
+Groups:[module_num:4|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:No
+    grouping metadata count:1
+    Metadata category:Well
+
+RescaleIntensity:[module_num:5|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:DAPI
+    Name the output image:RescaledDAPI
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Method to rescale pixels below the lower limit:Mask pixels
+    Custom value for pixels below lower limit:0.0
+    Method to rescale pixels above the upper limit:Mask pixels
+    Custom value for pixels above upper limit:0.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+RescaleIntensity:[module_num:6|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:EdU
+    Name the output image:RescaledEdU
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Method to rescale pixels below the lower limit:Mask pixels
+    Custom value for pixels below lower limit:0.0
+    Method to rescale pixels above the upper limit:Mask pixels
+    Custom value for pixels above upper limit:0.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+RescaleIntensity:[module_num:7|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:pH3
+    Name the output image:RescaledpH3
+    Rescaling method:Stretch each image to use the full intensity range
+    Method to calculate the minimum intensity:Custom
+    Method to calculate the maximum intensity:Custom
+    Lower intensity limit for the input image:0.0
+    Upper intensity limit for the input image:1.0
+    Intensity range for the input image:0.0,1.0
+    Intensity range for the output image:0.0,1.0
+    Method to rescale pixels below the lower limit:Mask pixels
+    Custom value for pixels below lower limit:0.0
+    Method to rescale pixels above the upper limit:Mask pixels
+    Custom value for pixels above upper limit:0.0
+    Select image to match in maximum intensity:None
+    Divisor value:1.0
+    Divisor measurement:None
+
+IdentifyPrimaryObjects:[module_num:8|svn_version:\'Unknown\'|variable_revision_number:10|show_window:False|notes:\x5B\'Nuclei_objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:RescaledDAPI
+    Name the primary objects to be identified:Nuclei_objects
+    Typical diameter of objects, in pixel units (Min,Max):15,80
+    Discard objects outside the diameter range?:Yes
+    Try to merge too small objects with nearby larger objects?:No
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Name the outline image:PrimaryOutlines
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Retain outlines of the identified objects?:No
+    Automatically calculate the threshold using the Otsu method?:Yes
+    Enter Laplacian of Gaussian threshold:0.5
+    Automatically calculate the size of objects for the Laplacian of Gaussian filter?:Yes
+    Enter LoG filter diameter:5.0
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Threshold setting version:2
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Select the smoothing method for thresholding:Automatic
+    Threshold smoothing scale:1.0
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Approximate fraction of image covered by objects?:0.01
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Select binary image:None
+    Masking objects:None
+    Two-class or three-class thresholding?:Two classes
+    Minimize the weighted variance or the entropy?:Weighted variance
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Method to calculate adaptive window size:Image size
+    Size of adaptive window:10
+    Use default parameters?:Default
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+
+IdentifyPrimaryObjects:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:10|show_window:False|notes:\x5B\'EdU_objects\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:RescaledEdU
+    Name the primary objects to be identified:EdU_objects
+    Typical diameter of objects, in pixel units (Min,Max):15,80
+    Discard objects outside the diameter range?:Yes
+    Try to merge too small objects with nearby larger objects?:No
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Name the outline image:PrimaryOutlines
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Retain outlines of the identified objects?:No
+    Automatically calculate the threshold using the Otsu method?:Yes
+    Enter Laplacian of Gaussian threshold:0.5
+    Automatically calculate the size of objects for the Laplacian of Gaussian filter?:Yes
+    Enter LoG filter diameter:5.0
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Threshold setting version:2
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Select the smoothing method for thresholding:Automatic
+    Threshold smoothing scale:1.0
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Approximate fraction of image covered by objects?:0.01
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Select binary image:None
+    Masking objects:None
+    Two-class or three-class thresholding?:Two classes
+    Minimize the weighted variance or the entropy?:Weighted variance
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Method to calculate adaptive window size:Image size
+    Size of adaptive window:10
+    Use default parameters?:Default
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+
+IdentifyPrimaryObjects:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:10|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:RescaledpH3
+    Name the primary objects to be identified:pH3_objects
+    Typical diameter of objects, in pixel units (Min,Max):15,80
+    Discard objects outside the diameter range?:Yes
+    Try to merge too small objects with nearby larger objects?:No
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Name the outline image:PrimaryOutlines
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Retain outlines of the identified objects?:No
+    Automatically calculate the threshold using the Otsu method?:Yes
+    Enter Laplacian of Gaussian threshold:0.5
+    Automatically calculate the size of objects for the Laplacian of Gaussian filter?:Yes
+    Enter LoG filter diameter:5.0
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Threshold setting version:2
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Select the smoothing method for thresholding:Automatic
+    Threshold smoothing scale:1.0
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Approximate fraction of image covered by objects?:0.01
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Select binary image:None
+    Masking objects:None
+    Two-class or three-class thresholding?:Two classes
+    Minimize the weighted variance or the entropy?:Weighted variance
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Method to calculate adaptive window size:Image size
+    Size of adaptive window:10
+    Use default parameters?:Default
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+
+MeasureObjectIntensity:[module_num:11|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Hidden:1
+    Select an image to measure:RescaledDAPI
+    Select objects to measure:Nuclei_objects
+
+ExportToSpreadsheet:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:11|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Select the column delimiter:Comma (",")
+    Add image metadata columns to your object data file?:No
+    Limit output to a size that is allowed in Excel?:No
+    Select the measurements to export:No
+    Calculate the per-image mean values for object measurements?:Yes
+    Calculate the per-image median values for object measurements?:Yes
+    Calculate the per-image standard deviation values for object measurements?:Yes
+    Output file location:Default Input Folder sub-folder\x7CDocuments/cellprofiler/Cell_Cycle/output
+    Create a GenePattern GCT file?:No
+    Select source of sample row name:Metadata
+    Select the image to use as the identifier:None
+    Select the metadata to use as the identifier:None
+    Export all measurement types?:Yes
+    :Ki67_objects\x7CParent_EdU_objects,Ki67_objects\x7CChildren_EdU_Ki67_positive_Count,Image\x7CCount_Ki67_objects,Image\x7CCount_Nuclei_objects,Image\x7CCount_EdU_Ki67_positive,Image\x7CCount_EdU_objects,Image\x7CFileName_DAPI,Image\x7CFileName_Ki67,Image\x7CFileName_EdU,Nuclei_objects\x7CIntensity_MassDisplacement_RescaledDAPI,Nuclei_objects\x7CIntensity_MinIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_IntegratedIntensityEdge_RescaledDAPI,Nuclei_objects\x7CIntensity_StdIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_UpperQuartileIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_LowerQuartileIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_MinIntensityEdge_RescaledDAPI,Nuclei_objects\x7CIntensity_MADIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_IntegratedIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_MeanIntensityEdge_RescaledDAPI,Nuclei_objects\x7CIntensity_MaxIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_MedianIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_MeanIntensity_RescaledDAPI,Nuclei_objects\x7CIntensity_StdIntensityEdge_RescaledDAPI,Nuclei_objects\x7CIntensity_MaxIntensityEdge_RescaledDAPI,Nuclei_objects\x7CNumber_Object_Number,Experiment\x7CModification_Timestamp,Experiment\x7CPipeline_Pipeline,Experiment\x7CRun_Timestamp,Experiment\x7CCellProfiler_Version,EdU_Ki67_positive\x7CNumber_Object_Number
+    Representation of Nan/Inf:NaN
+    Add a prefix to file names?:Yes
+    Filename prefix:cc_status_
+    Overwrite existing files without warning?:No
+    Data to export:Do not use
+    Combine these object measurements with those of the previous object?:No
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
